@@ -1,0 +1,103 @@
+# --- Секреты. Держать в самом верху и никогда не коммитить ---
+.env
+.env.*
+*.key
+secrets.json
+credentials.json
+gigachat_token*
+telegram_session*
+*.session
+*.session-journal
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Виртуальные окружения ---
+venv/
+env/
+ENV/
+.venv/
+.conda/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+# Ноутбуки коммитим С выводами, чтобы графики рендерились на GitHub.
+# Если понадобится чистить вывод автоматически, см. nbstripout.
+
+# --- Модели и веса. Слишком тяжёлые для git ---
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.onnx
+models/
+checkpoints/
+
+# --- Промежуточные данные и кэши ---
+*.pkl
+*.pickle
+*.parquet
+*.feather
+data/interim/
+data/cache/
+.cache/
+cache/
+
+# --- Временные выгрузки Telegram ---
+data/raw/telegram_dump_*
+data/raw/*_temp.csv
+
+# --- Логи ---
+*.log
+logs/
+wandb/
+runs/
+mlruns/
+
+# --- Excel и Word: временные файлы блокировки ---
+~$*.xlsx
+~$*.docx
+~$*.pptx
+.~lock.*
+
+# --- LaTeX, если текст ВКР собирается локально ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- ОС ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# --- Чужие материалы. В репозиторий не выкладываются ---
+literature/
+references_pdf/
+*_metodicheskie_rekomendacii*.pdf
